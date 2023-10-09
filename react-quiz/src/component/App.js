@@ -9,6 +9,8 @@ import Questions from './Questions.component';
 import NextButton from './NextButton.component';
 import ProgressBar from './ProgressBar.component';
 import FinishScreen from './FinishScreen.component';
+import Footer from './Footer';
+import Timer from './Timer.component';
 
 const initialState = {
   status: 'loading',
@@ -17,6 +19,7 @@ const initialState = {
   answer: null,
   points:0,
   highScore: 0,
+  secRemaining: 10,
 }
 function reducer(state,action){
   switch (action.type) {
@@ -34,7 +37,8 @@ function reducer(state,action){
     case 'dataActive':
       return{
         ...state,
-        status: 'active'
+        status: 'active',
+        secRemaining: state.questions.length * 30
       }
     case 'newAnswer':
       const question = state.questions.at(state.index)
@@ -63,13 +67,19 @@ function reducer(state,action){
         status: 'ready',
         highScore: state.highScore
       }
+    case 'tick':
+      return{
+        ...state,
+        secRemaining: state.secRemaining - 1,
+        status: state.secRemaining === 0 ? 'finished' : state.status
+      }
     default:
       throw new Error('Action unknown')
   }
 }
 
 function App() {
-  const [{status,questions,index,answer,points,highScore}, dispatch] = useReducer(reducer,initialState)
+  const [{status,questions,index,answer,points,highScore,secRemaining}, dispatch] = useReducer(reducer,initialState)
   const countQuest = questions.length
   const maxPoints = questions.reduce((prev,cur)=>prev+cur.points,0)
   useEffect(() => {
@@ -99,12 +109,18 @@ function App() {
         dispatch={dispatch}
         answer={answer}
         />
+        <Footer>
+        <Timer
+        dispatch={dispatch} 
+        secRemaining={secRemaining}
+        />
         <NextButton
         answer={answer}
         dispatch={dispatch} 
         index={index}
         countQuest={countQuest}
         />
+        </Footer>
         </>)}
         {status === 'finished' &&
         <FinishScreen 
