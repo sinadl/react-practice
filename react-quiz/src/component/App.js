@@ -8,13 +8,15 @@ import StartScreen from './StartScreen.component';
 import Questions from './Questions.component';
 import NextButton from './NextButton.component';
 import ProgressBar from './ProgressBar.component';
+import FinishScreen from './FinishScreen.component';
 
 const initialState = {
   status: 'loading',
   questions: [],
   index: 0,
   answer: null,
-  points:0
+  points:0,
+  highScore: 0,
 }
 function reducer(state,action){
   switch (action.type) {
@@ -48,13 +50,26 @@ function reducer(state,action){
         index: state.index + 1,
         answer: null
       }
+    case 'finished':
+      return{
+        ...state,
+        status: 'finished',
+        highScore: state.points < state.highScore? state.highScore : state.points
+      }
+    case 'restart':
+      return{
+        ...initialState,
+        questions: state.questions,
+        status: 'ready',
+        highScore: state.highScore
+      }
     default:
       throw new Error('Action unknown')
   }
 }
 
 function App() {
-  const [{status,questions,index,answer,points}, dispatch] = useReducer(reducer,initialState)
+  const [{status,questions,index,answer,points,highScore}, dispatch] = useReducer(reducer,initialState)
   const countQuest = questions.length
   const maxPoints = questions.reduce((prev,cur)=>prev+cur.points,0)
   useEffect(() => {
@@ -84,8 +99,20 @@ function App() {
         dispatch={dispatch}
         answer={answer}
         />
-        <NextButton answer={answer} dispatch={dispatch} />
+        <NextButton
+        answer={answer}
+        dispatch={dispatch} 
+        index={index}
+        countQuest={countQuest}
+        />
         </>)}
+        {status === 'finished' &&
+        <FinishScreen 
+        highScore={highScore} 
+        points={points} 
+        maxPoints={maxPoints} 
+        dispatch={dispatch}
+        />}
       </Main>
     </div>
   );
