@@ -10,6 +10,7 @@ import PageNotFound from './pages/PageNotFound'
 import Login from './pages/Login'
 import CityList from "./components/cityList/CityList"
 import CountryList from './components/countryList/CountryList'
+import City from "./components/city/City"
 
 const URL_CITIES = 'http://localhost:8000'
 export default function App() {
@@ -41,6 +42,7 @@ export default function App() {
         <Route path="app" element={<AppLayout />}>
           <Route index element={<CityList cities={cities} isLoading={isLoading}/>}/>
           <Route path="cities" element={<CityList cities={cities} isLoading={isLoading}/>}/>
+          <Route path="cities/:id" element={<City/>}/>
           <Route path="countries" element={<CountryList cities={cities} isLoading={isLoading}/>}/>
           <Route path="form" element={<p>Form</p>}/>
         </Route>
