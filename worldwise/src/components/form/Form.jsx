@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../button/Button";
+import ButtonBack from "../ButtonBack";
 
 import styles from "./Form.module.css";
 
@@ -53,11 +54,7 @@ function Form() {
 
       <div className={styles.buttons}>
         <Button type='primary' onClick={()=>{}}>Add</Button>
-        <Button type='back' 
-        onClick={(e)=>{
-          e.preventDefault();
-          navigate(-1);
-        }}>&larr; Back</Button>
+        <ButtonBack type='back' >&larr; Back</ButtonBack>
       </div>
     </form>
   );
