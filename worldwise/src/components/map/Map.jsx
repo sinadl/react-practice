@@ -6,8 +6,10 @@ import styles from './Map.module.css'
 import {MapContainer , Marker, Popup,TileLayer, useMap, useMapEvent} from 'react-leaflet'
 import {useCities} from "../../contexts/citiesContext"
 import { useGeoLocation } from "../../hooks/useGeolocation";
+import {useURL} from "../../hooks/useURL";
 import Button from "../button/Button";
 
+let GeoFlag = false;
 export default function Map() {
   const [searchParams] = useSearchParams();
   const {cities} = useCities();
@@ -15,9 +17,9 @@ export default function Map() {
   const {getPosition, positon: geoPos, isloading: loadingPos } = useGeoLocation();
 
   const navigate = useNavigate()
-  const mapLat = searchParams.get('lat')
-  const mapLng = searchParams.get('lng')
-  console.log(searchParams.has('form'))
+
+  const [mapLat,mapLng] = useURL();
+  
   useEffect(()=>{
     if(mapLat && mapLng){
       setMapPosition([mapLat,mapLng]);
@@ -31,9 +33,13 @@ export default function Map() {
       navigate(`form?lat=${geoPos.lat}&lng=${geoPos.lng}&form`) 
     } 
   },[geoPos]);
+  function getPositionMap(){
+    GeoFlag=false;
+    getPosition();
+  }
   return (
     <div className={styles.mapContainer}>
-      {(Object.keys(geoPos).length == 0) &&  <Button type='position' onClick={getPosition}>
+      {((Object.keys(geoPos).length == 0) || GeoFlag) &&  <Button type='position' onClick={getPositionMap}>
         {loadingPos? 'Loading...':'Get your location'}
       </Button>}
         <MapContainer 
@@ -61,7 +67,7 @@ export default function Map() {
             position={[mapLat,mapLng]}
             >
               <Popup>
-                A pretty CSS3 popup. <br /> Easily customizable.
+                This where you selected.
               </Popup>
             </Marker>}
         <ChangeCenter position={mapPosition}/>
@@ -73,6 +79,7 @@ export default function Map() {
 
 function ChangeCenter({position}){
   const map = useMap();
+  GeoFlag = true;
   map.setView(position);
   return null;
 }
