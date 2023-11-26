@@ -13,18 +13,6 @@
       "id": 73930385
     },
     {
-      "cityName": "Madrid",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
-      "notes": "",
-      "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      },
-      "id": 17806751
-    },
-    {
       "cityName": "Muniq",
       "country": "Germany",
       "emoji": "🇩🇪",
@@ -59,6 +47,186 @@
         "lng": 13.376933665713324
       },
       "id": 984431578
+    },
+    {
+      "cityName": "Champetieres",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-10-24T22:44:32.336Z",
+      "notes": "Champetieres:commune in Puy-de-Dôme, Francearrondissement of Ambert:arrondissement of FrancePuy-de-Dome:French departmentAuvergne-Rhone-Alpes:administrative region of FranceMetropolitan France:part of France located in EuropeFrance:country with territory in Europe and several overseas regions and territories",
+      "position": {
+        "lat": "45.521743896993634",
+        "lng": "3.6914062500000004"
+      },
+      "id": 9844314127
+    },
+    {
+      "cityName": "Hassi Messaoud",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2023-10-24T22:47:11.110Z",
+      "notes": "Hassi Messaoud District:district of AlgeriaHassi Messaoud:town in Ouargla Province, AlgeriaWilaya de Ouargla:Province of AlgeriaAlgeria:country in North Africa",
+      "position": {
+        "lat": "30.78903675126116",
+        "lng": "6.1962890625"
+      },
+      "id": 9844314128
+    },
+    {
+      "cityName": "Haliliye",
+      "country": "Turkiye",
+      "emoji": "🇹🇷",
+      "date": "2023-10-24T22:56:11.378Z",
+      "notes": "Hilvan:district and town of Şanlıurfa, TurkeyHaliliye:district and town of Şanlıurfa, TurkeySanliurfa:province of TurkeySoutheastern Anatolia Region:region of TurkeyTurkiye:country spanning Southeastern Europe and Western Asia",
+      "position": {
+        "lat": "37.389379891169646",
+        "lng": "38.95084924544291"
+      },
+      "id": 9844314129
+    },
+    {
+      "cityName": "Castello del Matese",
+      "country": "Italy",
+      "emoji": "🇮🇹",
+      "date": "2023-10-24T23:20:30.264Z",
+      "notes": "Castello del Matese:Italian comuneProvincia di Caserta:province of ItalyCampania:region in Southern ItalyItaly:republic in Southern Europe",
+      "position": {
+        "lat": "41.409775832009565",
+        "lng": "14.458007812500002"
+      },
+      "id": 9844314130
+    },
+    {
+      "cityName": "Tehran",
+      "country": "Iran (Islamic Republic of)",
+      "emoji": "🇮🇷",
+      "date": "2023-11-14T10:21:13.855Z",
+      "notes": "Vanak:undefinedDistrict 3:district in Tehran, IranTehran County:county in Tehran, IranTehran:capital city of IranTehran Province:province of IranIran (Islamic Republic of):country in Western Asia",
+      "position": {
+        "lat": "35.7634912",
+        "lng": "51.4052301"
+      },
+      "id": 9844314131
+    },
+    {
+      "cityName": "Mahora",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-11-22T02:13:48.949Z",
+      "notes": "Mahora:municipality of SpainProvincia de Albacete:province of SpainCastilla-La Mancha:autonomous community of SpainSpain:constitutional monarchy in Southwest Europe",
+      "position": {
+        "lat": "39.19820534889482",
+        "lng": "-1.6699218750000002"
+      },
+      "id": 9844314132
+    },
+    {
+      "cityName": "Hontoria de Valdearados",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-11-22T02:37:36.975Z",
+      "notes": "Hontoria de Valdearados:municipality of SpainProvincia de Burgos:province in Castile and León, SpainCastilla y Leon:autonomous community of SpainSpain:constitutional monarchy in Southwest Europe",
+      "position": {
+        "lat": "41.77131167976407",
+        "lng": "-3.4716796875000004"
+      },
+      "id": 9844314133
+    },
+    {
+      "cityName": "Tehran",
+      "country": "Iran (Islamic Republic of)",
+      "emoji": "🇮🇷",
+      "date": "2023-11-22T02:38:11.997Z",
+      "notes": "Vanak:undefinedDistrict 3:district in Tehran, IranTehran County:county in Tehran, IranTehran:capital city of IranTehran Province:province of IranIran (Islamic Republic of):country in Western Asia",
+      "position": {
+        "lat": "35.7635135",
+        "lng": "51.4052293"
+      },
+      "id": 9844314134
+    },
+    {
+      "cityName": "Al Ganab",
+      "country": "Sudan (the)",
+      "emoji": "🇸🇩",
+      "date": "2023-11-22T02:38:26.562Z",
+      "notes": "Sinkat, Sudan:human settlement in SudanRed Sea:state in SudanSudan (the):country in Northeast Africa",
+      "position": {
+        "lat": "18.729501999072138",
+        "lng": "34.32128906250001"
+      },
+      "id": 9844314136
+    },
+    {
+      "cityName": "Tazehabad",
+      "country": "Iran (Islamic Republic of)",
+      "emoji": "🇮🇷",
+      "date": "2023-11-22T02:56:55.694Z",
+      "notes": "دهستان خانه شور:undefinedCentral District:district (bakhsh) in Salas-e Babajani County, Kermanshah Province, IranSalas-e Babajani County:county in Kermanshah, IranTazehabad:city in Kermanshah Province, IranKermanshah Province:province of IranIran (Islamic Republic of):country in Western Asia",
+      "position": {
+        "lat": "34.74161249883172",
+        "lng": "46.05468750000001"
+      },
+      "id": 9844314137
+    },
+    {
+      "cityName": "Laupheim",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2023-11-22T03:00:06.082Z",
+      "notes": "Laupheim VVG:agreed administrative community in the district Landkreis Biberach, Baden-Württemberg, GermanyLaupheim:city in Baden-Württemberg, GermanyBiberach district:district in Baden-Württemberg, GermanyTubingen Government Region:government region of Baden-Württemberg, GermanyBaden-Wurttemberg:state in the southwest of the Federal Republic of GermanyGermany:country in central Europe",
+      "position": {
+        "lat": "48.22467264956519",
+        "lng": "9.843750000000002"
+      },
+      "id": 9844314139
+    },
+    {
+      "cityName": "Tehran",
+      "country": "Iran (Islamic Republic of)",
+      "emoji": "🇮🇷",
+      "date": "2023-11-26T02:18:38.986Z",
+      "notes": "Vanak:undefinedDistrict 3:district in Tehran, IranTehran County:county in Tehran, IranTehran:capital city of IranTehran Province:province of IranIran (Islamic Republic of):country in Western Asia",
+      "position": {
+        "lat": "35.7635142",
+        "lng": "51.4052298"
+      },
+      "id": 9844314140
+    },
+    {
+      "cityName": "Bisotun",
+      "country": "Iran (Islamic Republic of)",
+      "emoji": "🇮🇷",
+      "date": "2023-11-26T02:18:47.101Z",
+      "notes": "دهستان چم چمال:undefinedBisotun:city in Kermanshah Province, IranHarsin County:county in Kermanshah Province, IranKermanshah Province:province of IranIran (Islamic Republic of):country in Western Asia",
+      "position": {
+        "lat": "34.488447837809304",
+        "lng": "47.4609375"
+      },
+      "id": 9844314141
+    },
+    {
+      "cityName": "Tibesti-Ouest",
+      "country": "Chad",
+      "emoji": "🇹🇩",
+      "date": "2023-11-26T02:26:47.744Z",
+      "notes": "Tibesti Region:region of ChadChad:sovereign state in central Africa",
+      "position": {
+        "lat": "19.02057711096681",
+        "lng": "16.171875000000004"
+      },
+      "id": 9844314144
+    },
+    {
+      "cityName": "El Menia",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2023-11-26T02:26:54.713Z",
+      "notes": "El Menia:town in Ghardaïa Province, AlgeriaEl Menia District:district of AlgeriaEl Menia:province of AlgeriaAlgeria:country in North Africa",
+      "position": {
+        "lat": "30.86451022625836",
+        "lng": "3.9990234375000004"
+      },
+      "id": 9844314145
     }
   ]
 }
